@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Page Title</title>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bun Bun Bake Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
   <body>
-
-    <h1>I am the solution to HW2!</h1>
-
+    <header class="siteHeader">
+      <img
+        src="./assets/logo-01.svg"
+        class="logo"
+        alt="Logo of the Bun Bun Bake Shop"
+      />
+      <div class="headerItems">
+        <nav class="navbar">
+          <div><a href="#" class="selectedPage">Products</a></div>
+          <div id="cartItem">
+            <a href="#">Cart</a>
+            <div id="cartList"></div>
+          </div>
+        </nav>
+        <hr />
+        <div class="tagline">Our hand-made cinnamon rolls</div>
+      </div>
+    </header>
+    <section class="menuList">
+      <!--One Card Item-->
+      <div class="menuItem" id="original">
+        <img
+          src="./assets/original-cinnamon-roll.jpg"
+          alt="Original cinnamon roll"
+        />
+        <h3>Original cinnamon roll</h3>
+        <div class="menuItemRow">
+          <span>Glazing: </span
+          ><select id="originalDropdown" class="glazingDropdown"></select>
+        </div>
+        <div class="menuItemRow">
+          <span>Pack size: </span>
+          <div class="packSizeOptions" id="originalPack"></div>
+        </div>
+        <div class="menuItemRow priceRow">
+          <span class="priceValue">$2.49</span
+          ><button class="addToCardButton" onclick="addToCart(this)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <!--One Card Item-->
+      <div class="menuItem" id="apple">
+        <img src="./assets/apple-cinnamon-roll.jpg" alt="Apple cinnamon roll" />
+        <h3>Apple cinnamon roll</h3>
+        <div class="menuItemRow">
+          <span>Glazing: </span
+          ><select class="glazingDropdown" id="appleDropdown"></select>
+        </div>
+        <div class="menuItemRow">
+          <span>Pack size: </span>
+          <div class="packSizeOptions" id="applePack"></div>
+        </div>
+        <div class="menuItemRow priceRow">
+          <span class="priceValue">$3.49</span
+          ><button class="addToCardButton" onclick="addToCart(this)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <!--One Card Item-->
+      <div class="menuItem" id="raisin">
+        <img
+          src="./assets/raisin-cinnamon-roll.jpg"
+          alt="Raisin cinnamon roll"
+        />
+        <h3>Raisin cinnamon roll</h3>
+        <div class="menuItemRow">
+          <span>Glazing: </span
+          ><select class="glazingDropdown" id="raisinDropdown"></select>
+        </div>
+        <div class="menuItemRow">
+          <span>Pack size: </span>
+          <div class="packSizeOptions" id="raisinPack"></div>
+        </div>
+        <div class="menuItemRow priceRow">
+          <span class="priceValue">$2.99</span
+          ><button class="addToCardButton" onclick="addToCart(this)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <!--One Card Item-->
+      <div class="menuItem" id="walnut">
+        <img
+          src="./assets/walnut-cinnamon-roll.jpg"
+          alt="Walnut cinnamon roll"
+        />
+        <h3>Walnut cinnamon roll</h3>
+        <div class="menuItemRow">
+          <span>Glazing: </span
+          ><select class="glazingDropdown" id="walnutDropdown"></select>
+        </div>
+        <div class="menuItemRow">
+          <span>Pack size: </span>
+          <div class="packSizeOptions" id="walnutPack"></div>
+        </div>
+        <div class="menuItemRow priceRow">
+          <span class="priceValue">$3.49</span
+          ><button class="addToCardButton" onclick="addToCart(this)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <!--One Card Item-->
+      <div class="menuItem" id="double">
+        <img
+          src="./assets/double-chocolate-cinnamon-roll.jpg"
+          alt="Double-chocolate cinnamon roll"
+        />
+        <h3>Double-chocolate cinnamon roll</h3>
+        <div class="menuItemRow">
+          <span>Glazing: </span
+          ><select class="glazingDropdown" id="doubleDropdown"></select>
+        </div>
+        <div class="menuItemRow">
+          <span>Pack size: </span>
+          <div class="packSizeOptions" id="doublePack"></div>
+        </div>
+        <div class="menuItemRow priceRow">
+          <span class="priceValue">$3.99</span
+          ><button class="addToCardButton" onclick="addToCart(this)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <!--One Card Item-->
+      <div class="menuItem" id="strawberry">
+        <img
+          src="./assets/strawberry-cinnamon-roll.jpg"
+          alt="Strawberry cinnamon roll"
+        />
+        <h3>Strawberry cinnamon roll</h3>
+        <div class="menuItemRow">
+          <span>Glazing: </span
+          ><select class="glazingDropdown" id="strawberryDropdown"></select>
+        </div>
+        <div class="menuItemRow">
+          <span>Pack size: </span>
+          <div class="packSizeOptions" id="strawberryPack"></div>
+        </div>
+        <div class="menuItemRow priceRow">
+          <span class="priceValue">$3.99</span
+          ><button class="addToCardButton" onclick="addToCart(this)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js" type="text/javascript"></script>
   </body>
 </html>
